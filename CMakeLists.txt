@@ -1,0 +1,5 @@
+project(hiredis C)
+include_directories(adapters)
+cmake_minimum_required(VERSION 3.12)
+file(GLOB SOURCE *.c)
+add_executable(hiredis ${SOURCE})
